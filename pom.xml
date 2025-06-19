@@ -382,6 +382,7 @@
                 <version>${maven-bnd-plugin.version}</version>
                 <executions>
                     <execution>
+                        <phase>none</phase>
                         <goals>
                             <goal>bnd-process</goal>
                         </goals>
@@ -409,6 +410,25 @@
                     <classifier>${envClassifier}</classifier>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>${maven-jacoco-plugin.version}</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>prepare-agent</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>report</id>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
 
         <resources>
@@ -430,7 +450,7 @@
                         <stylesheetfile>stylesheet.css</stylesheetfile>
                         <docfilessubdirs>true</docfilessubdirs>
                         <excludePackageNames>
-                            net.finmath.montecarlo.automaticdifferentiation.backward.alternative:net.finmath.rootfinder
+                            net.finmath.montecarlo.automaticdifferentiation.backward.alternative:net.finmath.rootfinder:net.finmath.util.config
                         </excludePackageNames>
                         <header>
                             <![CDATA[
@@ -537,25 +557,6 @@
                             </pluginExecutions>
                         </lifecycleMappingMetadata>
                     </configuration>
-                </plugin>
-                <plugin>
-                    <groupId>org.jacoco</groupId>
-                    <artifactId>jacoco-maven-plugin</artifactId>
-                    <version>${maven-jacoco-plugin.version}</version>
-                    <executions>
-                        <execution>
-                            <goals>
-                                <goal>prepare-agent</goal>
-                            </goals>
-                        </execution>
-                        <execution>
-                            <id>report</id>
-                            <phase>test</phase>
-                            <goals>
-                                <goal>report</goal>
-                            </goals>
-                        </execution>
-                    </executions>
                 </plugin>
             </plugins>
         </pluginManagement>
