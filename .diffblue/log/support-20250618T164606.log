@@ -1,0 +1,16 @@
+16:46:06.722 [DEBUG]  [Preparing]   [main]              [com.diffblue.cover.commons.configuration.d] Using properties file in the given path
+16:46:06.723 [DEBUG]  [Preparing]   [main]              [com.diffblue.cover.commons.configuration.d] Property cover.licence.environment has not been set, using default value PRODUCTION
+16:46:07.035 [DEBUG]  [Preparing]   [main]              [com.diffblue.cover.commons.configuration.d] Using properties file found in user home Diffblue directory: /Users/amishra/.diffblue/telemetry.properties
+16:46:07.037 [DEBUG]  [Preparing]   [main]              [com.diffblue.cover.commons.configuration.d] Loading properties from file: telemetry.properties
+16:46:07.037 [DEBUG]  [Preparing]   [main]              [com.diffblue.cover.commons.configuration.d] Property telemetry.external.environment set in properties file to value production
+16:46:07.037 [DEBUG]  [Preparing]   [main]              [com.diffblue.cover.commons.configuration.d] Property telemetry.id set in properties file to value 82424d65-7f68-4d9d-b815-ebe214ad4adf
+16:46:07.039 [DEBUG]  [Preparing]   [main]              [com.diffblue.cover.commons.configuration.d] Property telemetry.external.enabled has not been set, using default value true
+16:46:07.039 [DEBUG]  [Preparing]   [main]              [com.diffblue.cover.commons.configuration.d] Property telemetry.reports.scheme has not been set, using default value http
+16:46:07.039 [DEBUG]  [Preparing]   [main]              [com.diffblue.cover.commons.configuration.d] Property telemetry.reports.hostname has not been set, using default value localhost
+16:46:07.039 [DEBUG]  [Preparing]   [main]              [com.diffblue.cover.commons.configuration.d] Property telemetry.reports.port has not been set, using default value 8080
+16:46:07.039 [DEBUG]  [Preparing]   [main]              [com.diffblue.cover.commons.configuration.d] Property telemetry.id set in properties file to value 82424d65-7f68-4d9d-b815-ebe214ad4adf
+16:46:07.039 [DEBUG]  [Preparing]   [main]              [com.diffblue.cover.commons.configuration.d] Property telemetry.reports.enabled has not been set, using default value false
+16:46:07.040 [DEBUG]  [Preparing]   [main]              [com.diffblue.cover.d.a] Checking connectivity of telemetry (mixpanel) to uri: https://api-eu.mixpanel.com
+16:46:07.223 [DEBUG]  [Preparing]   [main]              [com.diffblue.cover.d.a] Telemetry (mixpanel) connectivity response code: 404
+16:46:07.351 [DEBUG]  [Preparing]   [main]              [com.diffblue.cover.ui.controller.ah] Client heap size: 8192 MB
+16:46:07.353 [INFO]   [Preparing]   [main]              [com.diffblue.cover.ui.controller.r] Running: dcover --version
