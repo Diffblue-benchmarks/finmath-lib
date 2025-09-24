@@ -382,7 +382,7 @@
                 <version>${maven-bnd-plugin.version}</version>
                 <executions>
                     <execution>
-                        <phase>none</phase>
+                        <phase>compile</phase>
                         <goals>
                             <goal>bnd-process</goal>
                         </goals>
@@ -546,6 +546,7 @@
                                         <versionRange>
                                             [2.4.1,)
                                         </versionRange>
+                                        <phase>compile</phase>
                                         <goals>
                                             <goal>bnd-process</goal>
                                         </goals>
