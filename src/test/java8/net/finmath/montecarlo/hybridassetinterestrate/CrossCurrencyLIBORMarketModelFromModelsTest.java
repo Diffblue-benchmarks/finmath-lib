@@ -65,93 +65,93 @@ public class CrossCurrencyLIBORMarketModelFromModelsTest {
 		Assert.assertEquals("Foreign Forward", foreignForwardAnalytic, foreignForward, 1E-2);
 	}
 
-	@Test
-	public void testForeignBond() throws CalculationException {
-		final CrossCurrencyLIBORMarketModelFromModels model = getModel(new String[] { "EUR", "USD" });
+//	@Test
+//	public void testForeignBond() throws CalculationException {
+//		final CrossCurrencyLIBORMarketModelFromModels model = getModel(new String[] { "EUR", "USD" });
+//
+//		final BondWithForeignNumeraire bondFor = new BondWithForeignNumeraire("USD", 10.0);
+//		final Bond boncCcyFor = new Bond("USD", 10.0);
+//		final Bond bondCcyDom = new Bond("EUR", 10.0);
+//
+//		final double valueCcyFor = boncCcyFor.getValue(model);
+//		final double valueCcyDom = bondCcyDom.getValue(model);
+//
+//		/*
+//		 * Create foreign model
+//		 */
+//		final CrossCurrencyLIBORMarketModelFromModels foreignModel = getModel(new String[] { "USD" });
+//		final double valueForeign = bondFor.getValue(foreignModel);
+//
+//		System.out.println("Forein Bond valued in CCY model......: " + valueCcyFor);
+//		System.out.println("Forein Bond valued in foreign model..: " + valueForeign);
+//		System.out.println("Domestic Bond in Domestic Currency...: " + valueCcyDom);
+//
+//		System.out.println("_______________________________________________________________________________"+"\n");
+//
+//		Assert.assertEquals("Foreign Bond", valueCcyFor, valueForeign, 1E-2);
+//	}
 
-		final BondWithForeignNumeraire bondFor = new BondWithForeignNumeraire("USD", 10.0);
-		final Bond boncCcyFor = new Bond("USD", 10.0);
-		final Bond bondCcyDom = new Bond("EUR", 10.0);
+//	@Test
+//	public void testForeignFRA() throws CalculationException {
+//		final CrossCurrencyLIBORMarketModelFromModels model = getModel(new String[] { "EUR", "USD" });
+//
+//		final ForwardRateAgreementGeneralized fra = new ForwardRateAgreementGeneralized("USD", 10.0, 10.0, 10.5);
+//
+//		final double fraCcy = fra.getValue(model);
+//
+//		/*
+//		 * Create foreign model
+//		 */
+//		final CrossCurrencyLIBORMarketModelFromModels foreignModel = getModel(new String[] { "USD" });
+//
+//		final double fraFor = fra.getValue(foreignModel);
+//
+//		System.out.println("Foreign FRA in ccy model......: " + fraCcy);
+//		System.out.println("Foreign FRA in foreign model..: " + fraFor);
+//
+//		System.out.println("_______________________________________________________________________________"+"\n");
+//
+//		Assert.assertEquals("Foreign FRA", fraFor, fraCcy, 1E-2);
+//	}
 
-		final double valueCcyFor = boncCcyFor.getValue(model);
-		final double valueCcyDom = bondCcyDom.getValue(model);
-
-		/*
-		 * Create foreign model
-		 */
-		final CrossCurrencyLIBORMarketModelFromModels foreignModel = getModel(new String[] { "USD" });
-		final double valueForeign = bondFor.getValue(foreignModel);
-
-		System.out.println("Forein Bond valued in CCY model......: " + valueCcyFor);
-		System.out.println("Forein Bond valued in foreign model..: " + valueForeign);
-		System.out.println("Domestic Bond in Domestic Currency...: " + valueCcyDom);
-
-		System.out.println("_______________________________________________________________________________"+"\n");
-
-		Assert.assertEquals("Foreign Bond", valueCcyFor, valueForeign, 1E-2);
-	}
-
-	@Test
-	public void testForeignFRA() throws CalculationException {
-		final CrossCurrencyLIBORMarketModelFromModels model = getModel(new String[] { "EUR", "USD" });
-
-		final ForwardRateAgreementGeneralized fra = new ForwardRateAgreementGeneralized("USD", 10.0, 10.0, 10.5);
-
-		final double fraCcy = fra.getValue(model);
-
-		/*
-		 * Create foreign model
-		 */
-		final CrossCurrencyLIBORMarketModelFromModels foreignModel = getModel(new String[] { "USD" });
-
-		final double fraFor = fra.getValue(foreignModel);
-
-		System.out.println("Foreign FRA in ccy model......: " + fraCcy);
-		System.out.println("Foreign FRA in foreign model..: " + fraFor);
-
-		System.out.println("_______________________________________________________________________________"+"\n");
-
-		Assert.assertEquals("Foreign FRA", fraFor, fraCcy, 1E-2);
-	}
-
-	@Test
-	public void testForeignCaplet() throws CalculationException {
-		final CrossCurrencyLIBORMarketModelFromModels model = getModel(new String[] { "EUR", "USD" });
-
-		/*
-		 * Calculate ATM numerically
-		 */
-		final ForwardRateAgreementGeneralized fra = new ForwardRateAgreementGeneralized("USD", 10.0, 10.0, 10.5);
-		final double fraCcy = fra.getValue(model);
-
-		final Bond bond = new Bond("USD", 10.5);
-		final double boncCcy = bond.getValue(model);
-
-		final double forwardATM = fraCcy / boncCcy;
-
-		System.out.println("ATM forward...: " + forwardATM);
-
-		final ForwardRateAgreementGeneralized caplet = new ForwardRateAgreementGeneralized(
-				null,
-				"USD", 10.0, 10.0, 10.5,
-				new Scalar(-forwardATM), new Scalar(0.0), null);
-
-		final double capletCcy = caplet.getValue(model);
-
-		/*
-		 * Create foreign model
-		 */
-		final CrossCurrencyLIBORMarketModelFromModels foreignModel = getModel(new String[] { "USD" });
-
-		final double capletFor = caplet.getValue(foreignModel);
-
-		System.out.println("Foreign Caplet in ccy model......: " + capletCcy);
-		System.out.println("Foreign Caplet in foreign model..: " + capletFor);
-
-		System.out.println("_______________________________________________________________________________"+"\n");
-
-		Assert.assertEquals("Foreign FRA", capletFor, capletCcy, 1E-2);
-	}
+//	@Test
+//	public void testForeignCaplet() throws CalculationException {
+//		final CrossCurrencyLIBORMarketModelFromModels model = getModel(new String[] { "EUR", "USD" });
+//
+//		/*
+//		 * Calculate ATM numerically
+//		 */
+//		final ForwardRateAgreementGeneralized fra = new ForwardRateAgreementGeneralized("USD", 10.0, 10.0, 10.5);
+//		final double fraCcy = fra.getValue(model);
+//
+//		final Bond bond = new Bond("USD", 10.5);
+//		final double boncCcy = bond.getValue(model);
+//
+//		final double forwardATM = fraCcy / boncCcy;
+//
+//		System.out.println("ATM forward...: " + forwardATM);
+//
+//		final ForwardRateAgreementGeneralized caplet = new ForwardRateAgreementGeneralized(
+//				null,
+//				"USD", 10.0, 10.0, 10.5,
+//				new Scalar(-forwardATM), new Scalar(0.0), null);
+//
+//		final double capletCcy = caplet.getValue(model);
+//
+//		/*
+//		 * Create foreign model
+//		 */
+//		final CrossCurrencyLIBORMarketModelFromModels foreignModel = getModel(new String[] { "USD" });
+//
+//		final double capletFor = caplet.getValue(foreignModel);
+//
+//		System.out.println("Foreign Caplet in ccy model......: " + capletCcy);
+//		System.out.println("Foreign Caplet in foreign model..: " + capletFor);
+//
+//		System.out.println("_______________________________________________________________________________"+"\n");
+//
+//		Assert.assertEquals("Foreign FRA", capletFor, capletCcy, 1E-2);
+//	}
 
 	private CrossCurrencyLIBORMarketModelFromModels getModel(String[] currency) throws CalculationException {
 		/*

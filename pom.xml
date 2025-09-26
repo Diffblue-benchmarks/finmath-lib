@@ -30,11 +30,11 @@
         <!-- dependencies -->
         <commons-math.version>3.6.1</commons-math.version>
         <commons-lang.version>3.10</commons-lang.version>
-        <junit.version>5.6.2</junit.version>
+        <junit.version>5.12.2</junit.version>
         <!-- maven plugins -->
         <maven.compiler-plugin.version>3.8.1</maven.compiler-plugin.version>
-        <maven.surefire-plugin.version>3.0.0-M5</maven.surefire-plugin.version>
-        <maven.surefire-report-plugin.version>3.0.0-M5</maven.surefire-report-plugin.version>
+        <maven.surefire-plugin.version>3.0.0-M7</maven.surefire-plugin.version>
+        <maven.surefire-report-plugin.version>3.0.0-M7</maven.surefire-report-plugin.version>
         <maven.javadoc-plugin.version>3.3.2</maven.javadoc-plugin.version>
         <maven.jar-plugin.version>3.2.0</maven.jar-plugin.version>
         <maven.source-plugin.version>3.2.1</maven.source-plugin.version>
@@ -45,7 +45,7 @@
         <maven-scm-publish-plugin.version>3.1.0</maven-scm-publish-plugin.version>
         <maven-release-plugin.version>2.5.3</maven-release-plugin.version>
         <maven-bnd-plugin.version>5.3.0</maven-bnd-plugin.version>
-		<maven-jacoco-plugin.version>0.8.6</maven-jacoco-plugin.version>
+		<maven-jacoco-plugin.version>0.8.7</maven-jacoco-plugin.version>
     </properties>
 
     <licenses>
@@ -170,15 +170,15 @@
             <version>${commons-lang.version}</version>
         </dependency>
         <dependency>
+            <groupId>com.diffblue.cover</groupId>
+            <artifactId>cover-annotations</artifactId>
+            <version>1.6.0</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
             <groupId>org.jblas</groupId>
             <artifactId>jblas</artifactId>
             <version>1.2.4</version>
-        </dependency>
-        <dependency>
-            <groupId>com.diffblue.cover</groupId>
-            <artifactId>cover-annotations</artifactId>
-            <version>1.5.0</version>
-            <scope>provided</scope>
         </dependency>
 
         <dependency>
@@ -194,11 +194,24 @@
             <scope>test</scope>
         </dependency>
         <dependency>
+            <groupId>org.junit.platform</groupId>
+            <artifactId>junit-platform-launcher</artifactId>
+            <version>1.12.2</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
             <groupId>org.junit.vintage</groupId>
             <artifactId>junit-vintage-engine</artifactId>
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-junit-jupiter</artifactId>
+            <version>5.17.0</version>
+            <scope>test</scope>
+        </dependency>
+
         <dependency>
             <groupId>org.mockito</groupId>
             <artifactId>mockito-core</artifactId>
@@ -251,10 +264,14 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>${maven.surefire-plugin.version}</version>
+<!--                <configuration>-->
+<!--                    <forkCount>1</forkCount>-->
+<!--                    <reuseForks>false</reuseForks>-->
+<!--                    <argLine>-mx6G</argLine>-->
+<!--                </configuration>-->
                 <configuration>
-                    <forkCount>1</forkCount>
-                    <reuseForks>false</reuseForks>
-                    <argLine>-mx6G</argLine>
+                    <!-- Activate the use of TCP to transmit events to the plugin -->
+                    <forkNode implementation="org.apache.maven.plugin.surefire.extensions.SurefireForkNodeFactory"/>
                 </configuration>
             </plugin>
 
@@ -551,7 +568,6 @@
                                         <versionRange>
                                             [2.4.1,)
                                         </versionRange>
-                                        <phase>compile</phase>
                                         <goals>
                                             <goal>bnd-process</goal>
                                         </goals>
