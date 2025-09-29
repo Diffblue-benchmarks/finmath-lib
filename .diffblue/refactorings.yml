@@ -1,3 +1,1331 @@
 name: com.diffblue.cover.refactoring.Recipe
-recipeList: []
+recipeList:
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.climate.models.dice.submodels.EvolutionOfCapital,
+    fieldName: capitalDeprecation}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.climate.models.dice.submodels.EvolutionOfCapital,
+    fieldName: timeDiscretization}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.climate.models.dice.submodels.ForcingFunction,
+    fieldName: carbonConcentrationBase}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.climate.models.dice.submodels.ForcingFunction,
+    fieldName: forcingPerCarbonDoubling}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.equities.pricer.AnalyticOptionValuation,
+    fieldName: dcc}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.equities.pricer.EquityValuationResult,
+    fieldName: request}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.equities.pricer.EquityValuationResult,
+    fieldName: results}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.equities.pricer.PdeOptionValuation,
+    fieldName: dayCounter}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.equities.pricer.PdeOptionValuation,
+    fieldName: includeDividendDatesInGrid}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.equities.pricer.PdeOptionValuation,
+    fieldName: isLvPricer}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.equities.pricer.PdeOptionValuation,
+    fieldName: spaceMaxForwardMultiple}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.equities.pricer.PdeOptionValuation,
+    fieldName: spaceMinForwardMultiple}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.equities.pricer.PdeOptionValuation,
+    fieldName: spaceNbOfSteps}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.equities.pricer.PdeOptionValuation,
+    fieldName: spaceStepSize}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.equities.pricer.PdeOptionValuation,
+    fieldName: spotIndex}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.equities.pricer.PdeOptionValuation,
+    fieldName: spots}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.equities.pricer.PdeOptionValuation,
+    fieldName: timeStepsPerYear}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.time.daycount.DayCountConvention_30E_360,
+    fieldName: is30Eplus360}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.finitedifference.products.FDMEuropeanCallOption,
+    fieldName: maturity}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.finitedifference.products.FDMEuropeanCallOption,
+    fieldName: strike}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.finitedifference.products.FDMEuropeanPutOption,
+    fieldName: maturity}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.finitedifference.products.FDMEuropeanPutOption,
+    fieldName: strike}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.finitedifference.solvers.FDMThetaMethod,
+    fieldName: boundaryCondition}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.finitedifference.solvers.FDMThetaMethod,
+    fieldName: center}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.finitedifference.solvers.FDMThetaMethod,
+    fieldName: model}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.finitedifference.solvers.FDMThetaMethod,
+    fieldName: theta}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.finitedifference.solvers.FDMThetaMethod,
+    fieldName: timeHorizon}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.finitedifference.products.FDMEuropeanCallOption,
+    fieldName: maturity}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.finitedifference.products.FDMEuropeanCallOption,
+    fieldName: strike}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.functions.PoissonDistribution,
+    fieldName: lambda}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.interpolation.BiLinearInterpolation,
+    fieldName: x}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.interpolation.BiLinearInterpolation,
+    fieldName: y}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.interpolation.BiLinearInterpolation,
+    fieldName: z}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata.model.curves.CurveInterpolation$Builder,
+    fieldName: curveInterpolation}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata.model.curves.CurveInterpolation$Builder,
+    fieldName: curveInterpolation}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata.model.volatility.caplet.smile.LinearSmileInterpolater,
+    fieldName: strikeVector}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata.model.volatility.caplet.smile.LinearSmileInterpolater,
+    fieldName: volatilityMatrix}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata.products.Cashflow,
+    fieldName: discountCurveName}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata.products.Cashflow,
+    fieldName: flowAmount}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata.products.Cashflow,
+    fieldName: flowDate}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata.products.Cashflow,
+    fieldName: isPayer}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata.products.Forward,
+    fieldName: discountCurveName}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata.products.Forward,
+    fieldName: forwardCurveName}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata.products.Forward,
+    fieldName: maturity}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata.products.Forward,
+    fieldName: paymentOffset}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata.products.Forward,
+    fieldName: spread}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata.products.MarketForwardRateAgreement,
+    fieldName: discountCurveName}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata.products.MarketForwardRateAgreement,
+    fieldName: forwardCurveName}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata.products.MarketForwardRateAgreement,
+    fieldName: maturity}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata.products.MarketForwardRateAgreement,
+    fieldName: paymentOffset}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata.products.MarketForwardRateAgreement,
+    fieldName: spread}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata.products.Performance,
+    fieldName: productDenominator}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata.products.Performance,
+    fieldName: productNumerator}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata.products.SwapAnnuity,
+    fieldName: discountCurveName}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata.products.SwapAnnuity,
+    fieldName: schedule}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata2.calibration.CalibratedCurves$CalibrationSpec,
+    fieldName: calibrationCurveName}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata2.calibration.CalibratedCurves$CalibrationSpec,
+    fieldName: calibrationTime}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata2.calibration.CalibratedCurves$CalibrationSpec,
+    fieldName: discountCurvePayerName}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata2.calibration.CalibratedCurves$CalibrationSpec,
+    fieldName: discountCurveReceiverName}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata2.calibration.CalibratedCurves$CalibrationSpec,
+    fieldName: forwardCurvePayerName}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata2.calibration.CalibratedCurves$CalibrationSpec,
+    fieldName: forwardCurveReceiverName}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata2.calibration.CalibratedCurves$CalibrationSpec,
+    fieldName: spreadPayer}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata2.calibration.CalibratedCurves$CalibrationSpec,
+    fieldName: spreadReceiver}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata2.calibration.CalibratedCurves$CalibrationSpec,
+    fieldName: swapTenorDefinitionPayer}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata2.calibration.CalibratedCurves$CalibrationSpec,
+    fieldName: swapTenorDefinitionReceiver}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata2.calibration.CalibratedCurves$CalibrationSpec,
+    fieldName: symbol}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata2.calibration.CalibratedCurves$CalibrationSpec,
+    fieldName: type}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata2.calibration.CalibratedCurves$CalibrationSpec,
+    fieldName: calibrationCurveName}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata2.calibration.CalibratedCurves$CalibrationSpec,
+    fieldName: calibrationTime}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata2.calibration.CalibratedCurves$CalibrationSpec,
+    fieldName: discountCurvePayerName}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata2.calibration.CalibratedCurves$CalibrationSpec,
+    fieldName: discountCurveReceiverName}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata2.calibration.CalibratedCurves$CalibrationSpec,
+    fieldName: forwardCurvePayerName}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata2.calibration.CalibratedCurves$CalibrationSpec,
+    fieldName: forwardCurveReceiverName}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata2.calibration.CalibratedCurves$CalibrationSpec,
+    fieldName: spreadPayer}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata2.calibration.CalibratedCurves$CalibrationSpec,
+    fieldName: spreadReceiver}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata2.calibration.CalibratedCurves$CalibrationSpec,
+    fieldName: swapTenorDefinitionPayer}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata2.calibration.CalibratedCurves$CalibrationSpec,
+    fieldName: swapTenorDefinitionReceiver}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata2.calibration.CalibratedCurves$CalibrationSpec,
+    fieldName: symbol}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata2.calibration.CalibratedCurves$CalibrationSpec,
+    fieldName: type}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata2.calibration.CalibratedCurves$CalibrationSpec,
+    fieldName: calibrationCurveName}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata2.calibration.CalibratedCurves$CalibrationSpec,
+    fieldName: calibrationTime}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata2.calibration.CalibratedCurves$CalibrationSpec,
+    fieldName: discountCurvePayerName}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata2.calibration.CalibratedCurves$CalibrationSpec,
+    fieldName: discountCurveReceiverName}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata2.calibration.CalibratedCurves$CalibrationSpec,
+    fieldName: forwardCurvePayerName}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata2.calibration.CalibratedCurves$CalibrationSpec,
+    fieldName: forwardCurveReceiverName}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata2.calibration.CalibratedCurves$CalibrationSpec,
+    fieldName: spreadPayer}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata2.calibration.CalibratedCurves$CalibrationSpec,
+    fieldName: spreadReceiver}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata2.calibration.CalibratedCurves$CalibrationSpec,
+    fieldName: swapTenorDefinitionPayer}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata2.calibration.CalibratedCurves$CalibrationSpec,
+    fieldName: swapTenorDefinitionReceiver}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata2.calibration.CalibratedCurves$CalibrationSpec,
+    fieldName: symbol}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata2.calibration.CalibratedCurves$CalibrationSpec,
+    fieldName: type}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata2.model.curves.CurveInterpolation$Builder,
+    fieldName: curveInterpolation}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata2.model.curves.CurveInterpolation$Builder,
+    fieldName: curveInterpolation}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata2.products.Cashflow,
+    fieldName: discountCurveName}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata2.products.Cashflow,
+    fieldName: flowAmount}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata2.products.Cashflow,
+    fieldName: flowDate}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata2.products.Cashflow,
+    fieldName: isPayer}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata2.products.Forward,
+    fieldName: discountCurveName}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata2.products.Forward,
+    fieldName: forwardCurveName}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata2.products.Forward,
+    fieldName: maturity}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata2.products.Forward,
+    fieldName: paymentOffset}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata2.products.Forward,
+    fieldName: spread}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata2.products.MarketForwardRateAgreement,
+    fieldName: discountCurveName}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata2.products.MarketForwardRateAgreement,
+    fieldName: forwardCurveName}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata2.products.MarketForwardRateAgreement,
+    fieldName: maturity}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata2.products.MarketForwardRateAgreement,
+    fieldName: paymentOffset}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata2.products.MarketForwardRateAgreement,
+    fieldName: spread}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata2.products.Performance,
+    fieldName: productDenominator}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata2.products.Performance,
+    fieldName: productNumerator}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata2.products.SwapAnnuity,
+    fieldName: discountCurveName}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.marketdata2.products.SwapAnnuity,
+    fieldName: schedule}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.modelling.descriptor.xmlparser.FIPXMLParser,
+    fieldName: agentIsBuyer}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.modelling.descriptor.xmlparser.FIPXMLParser,
+    fieldName: discountCurveName}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.modelling.descriptor.xmlparser.FPMLParser,
+    fieldName: abstractBusinessdayCalendar}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.modelling.descriptor.xmlparser.FPMLParser,
+    fieldName: discountCurveName}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.modelling.descriptor.xmlparser.FPMLParser,
+    fieldName: forwardCurveName}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.modelling.descriptor.xmlparser.FPMLParser,
+    fieldName: homePartyId}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.modelling.descriptor.xmlparser.FPMLParser,
+    fieldName: shortPeriodConvention}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.modelling.descriptor.xmlparser.FPMLParser,
+    fieldName: abstractBusinessdayCalendar}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.modelling.descriptor.xmlparser.FPMLParser,
+    fieldName: discountCurveName}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.modelling.descriptor.xmlparser.FPMLParser,
+    fieldName: forwardCurveName}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.modelling.descriptor.xmlparser.FPMLParser,
+    fieldName: homePartyId}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.modelling.descriptor.xmlparser.FPMLParser,
+    fieldName: shortPeriodConvention}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.modelling.modelfactory.AssetModelMonteCarloFactory,
+    fieldName: randomVariableFactory}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.modelling.modelfactory.AssetModelMonteCarloFactory,
+    fieldName: scheme}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.modelling.modelfactory.AssetModelMonteCarloFactory,
+    fieldName: stochasticDriver}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.modelling.modelfactory.BlackScholesModelMonteCarloFactory,
+    fieldName: brownianMotion}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.modelling.modelfactory.BlackScholesModelMonteCarloFactory,
+    fieldName: randomVariableFactory}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.modelling.modelfactory.BlackScholesModelMonteCarloFiniteDifference1D,
+    fieldName: theta}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.modelling.modelfactory.HestonModelMonteCarloFactory,
+    fieldName: brownianMotion}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.modelling.modelfactory.HestonModelMonteCarloFactory,
+    fieldName: randomVariableFactory}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.modelling.modelfactory.HestonModelMonteCarloFactory,
+    fieldName: scheme}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.modelling.productfactory.InterestRateAnalyticProductFactory,
+    fieldName: referenceDate}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.modelling.productfactory.InterestRateMonteCarloProductFactory,
+    fieldName: referenceDate}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.modelling.productfactory.ProductFactoryCascade,
+    fieldName: factories}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.modelling.productfactory.ProductFactoryCascade,
+    fieldName: factories}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.modelling.productfactory.ProductFactoryCascade,
+    fieldName: factories}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.modelling.productfactory.ProductFactoryCascade,
+    fieldName: factories}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.modelling.productfactory.ProductFactoryCascade,
+    fieldName: factories}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.modelling.productfactory.ProductFactoryCascade,
+    fieldName: factories}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.modelling.productfactory.SingleAssetFourierProductFactory,
+    fieldName: referenceDate}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.modelling.productfactory.SingleAssetMonteCarloProductFactory,
+    fieldName: referenceDate}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.montecarlo.BrownianBridge,
+    fieldName: brownianIncrements}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.montecarlo.BrownianBridge,
+    fieldName: brownianIncrementsLazyInitLock}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.montecarlo.BrownianBridge,
+    fieldName: end}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.montecarlo.BrownianBridge,
+    fieldName: generator}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.montecarlo.BrownianBridge,
+    fieldName: randomVariableFactory}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.montecarlo.BrownianBridge,
+    fieldName: start}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: java.util.stream.AbstractPipeline,
+    fieldName: combinedFlags}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: java.util.stream.AbstractPipeline,
+    fieldName: depth}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: java.util.stream.AbstractPipeline,
+    fieldName: linkedOrConsumed}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: java.util.stream.AbstractPipeline,
+    fieldName: nextStage}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: java.util.stream.AbstractPipeline,
+    fieldName: parallel}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: java.util.stream.AbstractPipeline,
+    fieldName: previousStage}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: java.util.stream.AbstractPipeline,
+    fieldName: sourceAnyStateful}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: java.util.stream.AbstractPipeline,
+    fieldName: sourceCloseAction}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: java.util.stream.AbstractPipeline,
+    fieldName: sourceOrOpFlags}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: java.util.stream.AbstractPipeline,
+    fieldName: sourceSpliterator}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: java.util.stream.AbstractPipeline,
+    fieldName: sourceStage}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: java.util.stream.AbstractPipeline,
+    fieldName: sourceSupplier}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: java.util.stream.AbstractPipeline,
+    fieldName: combinedFlags}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: java.util.stream.AbstractPipeline,
+    fieldName: depth}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: java.util.stream.AbstractPipeline,
+    fieldName: linkedOrConsumed}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: java.util.stream.AbstractPipeline,
+    fieldName: nextStage}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: java.util.stream.AbstractPipeline,
+    fieldName: parallel}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: java.util.stream.AbstractPipeline,
+    fieldName: previousStage}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: java.util.stream.AbstractPipeline,
+    fieldName: sourceAnyStateful}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: java.util.stream.AbstractPipeline,
+    fieldName: sourceCloseAction}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: java.util.stream.AbstractPipeline,
+    fieldName: sourceOrOpFlags}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: java.util.stream.AbstractPipeline,
+    fieldName: sourceSpliterator}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: java.util.stream.AbstractPipeline,
+    fieldName: sourceStage}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: java.util.stream.AbstractPipeline,
+    fieldName: sourceSupplier}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: java.util.stream.AbstractPipeline,
+    fieldName: combinedFlags}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: java.util.stream.AbstractPipeline,
+    fieldName: depth}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: java.util.stream.AbstractPipeline,
+    fieldName: linkedOrConsumed}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: java.util.stream.AbstractPipeline,
+    fieldName: nextStage}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: java.util.stream.AbstractPipeline,
+    fieldName: parallel}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: java.util.stream.AbstractPipeline,
+    fieldName: previousStage}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: java.util.stream.AbstractPipeline,
+    fieldName: sourceAnyStateful}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: java.util.stream.AbstractPipeline,
+    fieldName: sourceCloseAction}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: java.util.stream.AbstractPipeline,
+    fieldName: sourceOrOpFlags}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: java.util.stream.AbstractPipeline,
+    fieldName: sourceSpliterator}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: java.util.stream.AbstractPipeline,
+    fieldName: sourceStage}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: java.util.stream.AbstractPipeline,
+    fieldName: sourceSupplier}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.montecarlo.automaticdifferentiation.AbstractRandomVariableDifferentiableFactory,
+    fieldName: randomVariableFactoryForNonDifferentiable}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.montecarlo.automaticdifferentiation.AbstractRandomVariableDifferentiableFactory,
+    fieldName: randomVariableFactoryForNonDifferentiable}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.montecarlo.automaticdifferentiation.AbstractRandomVariableDifferentiableFactory,
+    fieldName: randomVariableFactoryForNonDifferentiable}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.montecarlo.conditionalexpectation.LinearRegression,
+    fieldName: basisFunctions}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.montecarlo.conditionalexpectation.MonteCarloConditionalExpectationLocalizedOnDependentRegressionFactory,
+    fieldName: standardDeviations}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.montecarlo.conditionalexpectation.RegressionBasisFunctionsFromProducts,
+    fieldName: products}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.montecarlo.hybridassetinterestrate.ConvexityAdjustedModel,
+    fieldName: baseModel}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.montecarlo.hybridassetinterestrate.ConvexityAdjustedModel,
+    fieldName: factorLoadingMap}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.montecarlo.hybridassetinterestrate.ConvexityAdjustedModel,
+    fieldName: measureTransformModel}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.montecarlo.hybridassetinterestrate.ModelFactory,
+    fieldName: modelFactory}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.OptimizerFactoryCMAES,
+    fieldName: accuracy}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.OptimizerFactoryCMAES,
+    fieldName: maxIterations}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.OptimizerFactoryCMAES,
+    fieldName: parameterLowerBound}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.OptimizerFactoryCMAES,
+    fieldName: parameterStandardDeviation}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.OptimizerFactoryCMAES,
+    fieldName: parameterUppderBound}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.OptimizerFactoryCMAES,
+    fieldName: accuracy}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.OptimizerFactoryCMAES,
+    fieldName: maxIterations}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.OptimizerFactoryCMAES,
+    fieldName: parameterLowerBound}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.OptimizerFactoryCMAES,
+    fieldName: parameterStandardDeviation}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.OptimizerFactoryCMAES,
+    fieldName: parameterUppderBound}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.OptimizerFactoryCMAES,
+    fieldName: accuracy}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.OptimizerFactoryCMAES,
+    fieldName: maxIterations}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.OptimizerFactoryCMAES,
+    fieldName: parameterLowerBound}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.OptimizerFactoryCMAES,
+    fieldName: parameterStandardDeviation}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.OptimizerFactoryCMAES,
+    fieldName: parameterUppderBound}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.OptimizerFactoryLevenbergMarquardt,
+    fieldName: errorTolerance}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.OptimizerFactoryLevenbergMarquardt,
+    fieldName: lambda}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.OptimizerFactoryLevenbergMarquardt,
+    fieldName: maxIterations}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.OptimizerFactoryLevenbergMarquardt,
+    fieldName: maxThreads}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.OptimizerFactoryLevenbergMarquardt,
+    fieldName: regularizationMethod}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.OptimizerFactoryLevenbergMarquardt,
+    fieldName: errorTolerance}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.OptimizerFactoryLevenbergMarquardt,
+    fieldName: lambda}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.OptimizerFactoryLevenbergMarquardt,
+    fieldName: maxIterations}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.OptimizerFactoryLevenbergMarquardt,
+    fieldName: maxThreads}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.OptimizerFactoryLevenbergMarquardt,
+    fieldName: regularizationMethod}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.OptimizerFactoryLevenbergMarquardt,
+    fieldName: errorTolerance}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.OptimizerFactoryLevenbergMarquardt,
+    fieldName: lambda}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.OptimizerFactoryLevenbergMarquardt,
+    fieldName: maxIterations}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.OptimizerFactoryLevenbergMarquardt,
+    fieldName: maxThreads}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.OptimizerFactoryLevenbergMarquardt,
+    fieldName: regularizationMethod}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.OptimizerFactoryLevenbergMarquardt,
+    fieldName: errorTolerance}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.OptimizerFactoryLevenbergMarquardt,
+    fieldName: lambda}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.OptimizerFactoryLevenbergMarquardt,
+    fieldName: maxIterations}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.OptimizerFactoryLevenbergMarquardt,
+    fieldName: maxThreads}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.OptimizerFactoryLevenbergMarquardt,
+    fieldName: regularizationMethod}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: derivativeCurrent}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: errorMeanSquaredCurrent}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: errorRootMeanSquaredChange}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: errorTolerance}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: executor}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: executorShutdownWhenDone}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: initialParameters}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: isParameterCurrentDerivativeValid}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: lambdaInitialValue}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: logger}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: maxIteration}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: numberOfThreads}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: parameterSteps}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: parameterTest}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: regularizationMethod}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: targetValues}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: valueCurrent}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: valueTest}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticOptimizerFactoryLevenbergMarquardt,
+    fieldName: errorTolerance}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticOptimizerFactoryLevenbergMarquardt,
+    fieldName: maxIterations}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticOptimizerFactoryLevenbergMarquardt,
+    fieldName: maxThreads}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticOptimizerFactoryLevenbergMarquardt,
+    fieldName: regularizationMethod}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: derivativeCurrent}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: errorMeanSquaredCurrent}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: errorRootMeanSquaredChange}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: errorTolerance}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: executor}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: executorShutdownWhenDone}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: initialParameters}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: isParameterCurrentDerivativeValid}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: lambdaInitialValue}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: logger}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: maxIteration}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: numberOfThreads}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: parameterSteps}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: parameterTest}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: regularizationMethod}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: targetValues}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: valueCurrent}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: valueTest}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticOptimizerFactoryLevenbergMarquardt,
+    fieldName: errorTolerance}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticOptimizerFactoryLevenbergMarquardt,
+    fieldName: maxIterations}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticOptimizerFactoryLevenbergMarquardt,
+    fieldName: maxThreads}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticOptimizerFactoryLevenbergMarquardt,
+    fieldName: regularizationMethod}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticOptimizerFactoryLevenbergMarquardt,
+    fieldName: errorTolerance}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticOptimizerFactoryLevenbergMarquardt,
+    fieldName: maxIterations}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticOptimizerFactoryLevenbergMarquardt,
+    fieldName: maxThreads}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticOptimizerFactoryLevenbergMarquardt,
+    fieldName: regularizationMethod}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: derivativeCurrent}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: errorMeanSquaredCurrent}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: errorRootMeanSquaredChange}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: errorTolerance}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: executor}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: executorShutdownWhenDone}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: initialParameters}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: isParameterCurrentDerivativeValid}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: lambdaInitialValue}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: logger}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: maxIteration}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: numberOfThreads}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: parameterSteps}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: parameterTest}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: regularizationMethod}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: targetValues}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: valueCurrent}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: valueTest}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticOptimizerFactoryLevenbergMarquardt,
+    fieldName: errorTolerance}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticOptimizerFactoryLevenbergMarquardt,
+    fieldName: maxIterations}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticOptimizerFactoryLevenbergMarquardt,
+    fieldName: maxThreads}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticOptimizerFactoryLevenbergMarquardt,
+    fieldName: regularizationMethod}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: derivativeCurrent}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: errorMeanSquaredCurrent}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: errorRootMeanSquaredChange}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: errorTolerance}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: executor}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: executorShutdownWhenDone}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: initialParameters}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: isParameterCurrentDerivativeValid}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: lambdaInitialValue}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: logger}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: maxIteration}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: numberOfThreads}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: parameterSteps}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: parameterTest}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: regularizationMethod}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: targetValues}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: valueCurrent}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: valueTest}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticOptimizerFactoryLevenbergMarquardt,
+    fieldName: errorTolerance}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticOptimizerFactoryLevenbergMarquardt,
+    fieldName: maxIterations}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticOptimizerFactoryLevenbergMarquardt,
+    fieldName: maxThreads}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticOptimizerFactoryLevenbergMarquardt,
+    fieldName: regularizationMethod}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: derivativeCurrent}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: errorMeanSquaredCurrent}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: errorRootMeanSquaredChange}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: errorTolerance}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: executor}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: executorShutdownWhenDone}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: initialParameters}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: isParameterCurrentDerivativeValid}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: lambdaInitialValue}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: logger}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: maxIteration}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: numberOfThreads}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: parameterSteps}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: parameterTest}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: regularizationMethod}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: targetValues}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: valueCurrent}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: valueTest}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: derivativeCurrent}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: errorMeanSquaredCurrent}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: errorRootMeanSquaredChange}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: errorTolerance}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: executor}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: executorShutdownWhenDone}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: initialParameters}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: isParameterCurrentDerivativeValid}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: lambdaInitialValue}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: logger}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: maxIteration}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: numberOfThreads}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: parameterSteps}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: parameterTest}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: regularizationMethod}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: targetValues}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: valueCurrent}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticLevenbergMarquardt,
+    fieldName: valueTest}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticOptimizerFactoryLevenbergMarquardt,
+    fieldName: errorTolerance}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticOptimizerFactoryLevenbergMarquardt,
+    fieldName: maxIterations}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticOptimizerFactoryLevenbergMarquardt,
+    fieldName: maxThreads}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticOptimizerFactoryLevenbergMarquardt,
+    fieldName: regularizationMethod}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticOptimizerFactoryLevenbergMarquardtAD,
+    fieldName: errorTolerance}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticOptimizerFactoryLevenbergMarquardtAD,
+    fieldName: maxIterations}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticOptimizerFactoryLevenbergMarquardtAD,
+    fieldName: maxThreads}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: derivativeCurrent}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: errorMeanSquaredCurrent}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: errorRootMeanSquaredChange}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: errorTolerance}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: executor}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: executorShutdownWhenDone}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: initialParameters}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: isParameterCurrentDerivativeValid}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: lambdaInitialValue}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: logger}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: maxIteration}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: numberOfPaths}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: parameterSteps}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: parameterTest}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: targetValues}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: valueCurrent}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: valueTest}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: weights}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticOptimizerFactoryLevenbergMarquardtAD,
+    fieldName: errorTolerance}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticOptimizerFactoryLevenbergMarquardtAD,
+    fieldName: maxIterations}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticOptimizerFactoryLevenbergMarquardtAD,
+    fieldName: maxThreads}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: derivativeCurrent}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: errorMeanSquaredCurrent}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: errorRootMeanSquaredChange}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: errorTolerance}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: executor}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: executorShutdownWhenDone}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: initialParameters}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: isParameterCurrentDerivativeValid}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: lambdaInitialValue}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: logger}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: maxIteration}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: numberOfPaths}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: parameterSteps}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: parameterTest}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: targetValues}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: valueCurrent}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: valueTest}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: weights}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: derivativeCurrent}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: errorMeanSquaredCurrent}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: errorRootMeanSquaredChange}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: errorTolerance}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: executor}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: executorShutdownWhenDone}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: initialParameters}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: isParameterCurrentDerivativeValid}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: lambdaInitialValue}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: logger}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: maxIteration}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: numberOfPaths}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: parameterSteps}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: parameterTest}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: targetValues}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: valueCurrent}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: valueTest}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: weights}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticOptimizerFactoryLevenbergMarquardtAD,
+    fieldName: errorTolerance}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticOptimizerFactoryLevenbergMarquardtAD,
+    fieldName: maxIterations}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticOptimizerFactoryLevenbergMarquardtAD,
+    fieldName: maxThreads}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticOptimizerFactoryPathwiseLevenbergMarquardtAD,
+    fieldName: errorTolerance}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticOptimizerFactoryPathwiseLevenbergMarquardtAD,
+    fieldName: maxIterations}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticOptimizerFactoryPathwiseLevenbergMarquardtAD,
+    fieldName: maxThreads}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: derivativeCurrent}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: errorMeanSquaredCurrent}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: errorRootMeanSquaredChange}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: errorTolerance}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: executor}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: executorShutdownWhenDone}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: initialParameters}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: isParameterCurrentDerivativeValid}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: lambdaInitialValue}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: logger}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: maxIteration}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: numberOfPaths}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: parameterSteps}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: parameterTest}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: targetValues}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: valueCurrent}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: valueTest}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: weights}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticOptimizerFactoryPathwiseLevenbergMarquardtAD,
+    fieldName: errorTolerance}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticOptimizerFactoryPathwiseLevenbergMarquardtAD,
+    fieldName: maxIterations}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticOptimizerFactoryPathwiseLevenbergMarquardtAD,
+    fieldName: maxThreads}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: derivativeCurrent}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: errorMeanSquaredCurrent}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: errorRootMeanSquaredChange}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: errorTolerance}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: executor}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: executorShutdownWhenDone}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: initialParameters}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: isParameterCurrentDerivativeValid}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: lambdaInitialValue}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: logger}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: maxIteration}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: numberOfPaths}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: parameterSteps}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: parameterTest}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: targetValues}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: valueCurrent}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: valueTest}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: weights}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticOptimizerFactoryPathwiseLevenbergMarquardtAD,
+    fieldName: errorTolerance}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticOptimizerFactoryPathwiseLevenbergMarquardtAD,
+    fieldName: maxIterations}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticOptimizerFactoryPathwiseLevenbergMarquardtAD,
+    fieldName: maxThreads}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: derivativeCurrent}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: errorMeanSquaredCurrent}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: errorRootMeanSquaredChange}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: errorTolerance}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: executor}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: executorShutdownWhenDone}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: initialParameters}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: isParameterCurrentDerivativeValid}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: lambdaInitialValue}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: logger}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: maxIteration}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: numberOfPaths}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: parameterSteps}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: parameterTest}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: targetValues}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: valueCurrent}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: valueTest}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: weights}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticOptimizerFactoryPathwiseLevenbergMarquardtAD,
+    fieldName: errorTolerance}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticOptimizerFactoryPathwiseLevenbergMarquardtAD,
+    fieldName: maxIterations}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticOptimizerFactoryPathwiseLevenbergMarquardtAD,
+    fieldName: maxThreads}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseOptimizerFactoryLevenbergMarquardt,
+    fieldName: errorTolerance}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseOptimizerFactoryLevenbergMarquardt,
+    fieldName: maxIterations}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseOptimizerFactoryLevenbergMarquardt,
+    fieldName: maxThreads}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseOptimizerFactoryLevenbergMarquardt,
+    fieldName: errorTolerance}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseOptimizerFactoryLevenbergMarquardt,
+    fieldName: maxIterations}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseOptimizerFactoryLevenbergMarquardt,
+    fieldName: maxThreads}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: derivativeCurrent}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: errorMeanSquaredCurrent}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: errorRootMeanSquaredChange}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: errorTolerance}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: executor}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: executorShutdownWhenDone}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: initialParameters}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: isParameterCurrentDerivativeValid}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: lambdaInitialValue}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: logger}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: maxIteration}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: numberOfPaths}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: parameterSteps}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: parameterTest}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: targetValues}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: valueCurrent}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: valueTest}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: weights}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseOptimizerFactoryLevenbergMarquardt,
+    fieldName: errorTolerance}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseOptimizerFactoryLevenbergMarquardt,
+    fieldName: maxIterations}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseOptimizerFactoryLevenbergMarquardt,
+    fieldName: maxThreads}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: derivativeCurrent}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: errorMeanSquaredCurrent}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: errorRootMeanSquaredChange}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: errorTolerance}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: executor}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: executorShutdownWhenDone}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: initialParameters}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: isParameterCurrentDerivativeValid}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: lambdaInitialValue}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: logger}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: maxIteration}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: numberOfPaths}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: parameterSteps}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: parameterTest}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: targetValues}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: valueCurrent}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: valueTest}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: weights}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseOptimizerFactoryLevenbergMarquardt,
+    fieldName: errorTolerance}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseOptimizerFactoryLevenbergMarquardt,
+    fieldName: maxIterations}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseOptimizerFactoryLevenbergMarquardt,
+    fieldName: maxThreads}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: derivativeCurrent}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: errorMeanSquaredCurrent}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: errorRootMeanSquaredChange}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: errorTolerance}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: executor}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: executorShutdownWhenDone}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: initialParameters}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: isParameterCurrentDerivativeValid}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: lambdaInitialValue}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: logger}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: maxIteration}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: numberOfPaths}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: parameterSteps}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: parameterTest}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: targetValues}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: valueCurrent}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: valueTest}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseLevenbergMarquardt,
+    fieldName: weights}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseOptimizerFactoryLevenbergMarquardt,
+    fieldName: errorTolerance}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseOptimizerFactoryLevenbergMarquardt,
+    fieldName: maxIterations}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.StochasticPathwiseOptimizerFactoryLevenbergMarquardt,
+    fieldName: maxThreads}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.parameter.ParameterTransfromBoundedSlope,
+    fieldName: parameterLowerBound}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.parameter.ParameterTransfromBoundedSlope,
+    fieldName: parameterSlopeLowerBound}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.parameter.ParameterTransfromBoundedSlope,
+    fieldName: parameterSlopeUpperBound}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.parameter.ParameterTransfromBoundedSlope,
+    fieldName: parameterUpperBound}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.parameter.ParameterTransfromSimpleBounded,
+    fieldName: parameterLowerBound}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.parameter.ParameterTransfromSimpleBounded,
+    fieldName: parameterUpperBound}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.parameter.ParameterTransfromSimpleBounded,
+    fieldName: parameterLowerBound}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.optimizer.parameter.ParameterTransfromSimpleBounded,
+    fieldName: parameterUpperBound}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.parser.CSVCurveParser,
+    fieldName: extrapolationMethod}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.parser.CSVCurveParser,
+    fieldName: interpolationEntity}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.parser.CSVCurveParser,
+    fieldName: interpolationMethod}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.parser.CSVCurveParser,
+    fieldName: extrapolationMethod}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.parser.CSVCurveParser,
+    fieldName: interpolationEntity}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.parser.CSVCurveParser,
+    fieldName: interpolationMethod}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.parser.CSVCurveParser,
+    fieldName: extrapolationMethod}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.parser.CSVCurveParser,
+    fieldName: interpolationEntity}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.parser.CSVCurveParser,
+    fieldName: interpolationMethod}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.parser.CSVSwaptionParser,
+    fieldName: csvSplitBy}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.parser.CSVSwaptionParser,
+    fieldName: fileQuotingConvention}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.parser.CSVSwaptionParser,
+    fieldName: fileQuotingUnit}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.parser.CSVSwaptionParser,
+    fieldName: fileQuotingUnitForDisplacement}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.parser.CSVSwaptionParser,
+    fieldName: fixMetaSchedule}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.parser.CSVSwaptionParser,
+    fieldName: floatMetaSchedule}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.parser.CSVSwaptionParser,
+    fieldName: maturities}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.parser.CSVSwaptionParser,
+    fieldName: swaptionCode}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.parser.CSVSwaptionParser,
+    fieldName: tenors}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.parser.CSVSwaptionParser,
+    fieldName: csvSplitBy}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.parser.CSVSwaptionParser,
+    fieldName: fileQuotingConvention}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.parser.CSVSwaptionParser,
+    fieldName: fileQuotingUnit}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.parser.CSVSwaptionParser,
+    fieldName: fileQuotingUnitForDisplacement}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.parser.CSVSwaptionParser,
+    fieldName: fixMetaSchedule}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.parser.CSVSwaptionParser,
+    fieldName: floatMetaSchedule}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.parser.CSVSwaptionParser,
+    fieldName: maturities}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.parser.CSVSwaptionParser,
+    fieldName: swaptionCode}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.parser.CSVSwaptionParser,
+    fieldName: tenors}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.parser.CSVSwaptionParser,
+    fieldName: csvSplitBy}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.parser.CSVSwaptionParser,
+    fieldName: fileQuotingConvention}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.parser.CSVSwaptionParser,
+    fieldName: fileQuotingUnit}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.parser.CSVSwaptionParser,
+    fieldName: fileQuotingUnitForDisplacement}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.parser.CSVSwaptionParser,
+    fieldName: fixMetaSchedule}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.parser.CSVSwaptionParser,
+    fieldName: floatMetaSchedule}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.parser.CSVSwaptionParser,
+    fieldName: maturities}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.parser.CSVSwaptionParser,
+    fieldName: swaptionCode}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.parser.CSVSwaptionParser,
+    fieldName: tenors}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.randomnumbers.MersenneTwister,
+    fieldName: mersenneTwister}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.randomnumbers.MersenneTwister,
+    fieldName: seed}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.singleswaprate.annuitymapping.AnnuityMappingFactory,
+    fieldName: discountCurveName}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.singleswaprate.annuitymapping.AnnuityMappingFactory,
+    fieldName: fixSchedule}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.singleswaprate.annuitymapping.AnnuityMappingFactory,
+    fieldName: floatSchedule}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.singleswaprate.annuitymapping.AnnuityMappingFactory,
+    fieldName: forwardCurveName}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.singleswaprate.annuitymapping.AnnuityMappingFactory,
+    fieldName: lowerBound}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.singleswaprate.annuitymapping.AnnuityMappingFactory,
+    fieldName: numberOfEvaluationPoints}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.singleswaprate.annuitymapping.AnnuityMappingFactory,
+    fieldName: strike}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.singleswaprate.annuitymapping.AnnuityMappingFactory,
+    fieldName: upperBound}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.singleswaprate.annuitymapping.AnnuityMappingFactory,
+    fieldName: volatilityCubeName}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.singleswaprate.annuitymapping.AnnuityMappingFactory,
+    fieldName: discountCurveName}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.singleswaprate.annuitymapping.AnnuityMappingFactory,
+    fieldName: fixSchedule}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.singleswaprate.annuitymapping.AnnuityMappingFactory,
+    fieldName: floatSchedule}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.singleswaprate.annuitymapping.AnnuityMappingFactory,
+    fieldName: forwardCurveName}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.singleswaprate.annuitymapping.AnnuityMappingFactory,
+    fieldName: lowerBound}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.singleswaprate.annuitymapping.AnnuityMappingFactory,
+    fieldName: numberOfEvaluationPoints}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.singleswaprate.annuitymapping.AnnuityMappingFactory,
+    fieldName: strike}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.singleswaprate.annuitymapping.AnnuityMappingFactory,
+    fieldName: upperBound}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.singleswaprate.annuitymapping.AnnuityMappingFactory,
+    fieldName: volatilityCubeName}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.singleswaprate.annuitymapping.AnnuityMappingFactory,
+    fieldName: discountCurveName}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.singleswaprate.annuitymapping.AnnuityMappingFactory,
+    fieldName: fixSchedule}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.singleswaprate.annuitymapping.AnnuityMappingFactory,
+    fieldName: floatSchedule}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.singleswaprate.annuitymapping.AnnuityMappingFactory,
+    fieldName: forwardCurveName}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.singleswaprate.annuitymapping.AnnuityMappingFactory,
+    fieldName: lowerBound}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.singleswaprate.annuitymapping.AnnuityMappingFactory,
+    fieldName: numberOfEvaluationPoints}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.singleswaprate.annuitymapping.AnnuityMappingFactory,
+    fieldName: strike}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.singleswaprate.annuitymapping.AnnuityMappingFactory,
+    fieldName: upperBound}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.singleswaprate.annuitymapping.AnnuityMappingFactory,
+    fieldName: volatilityCubeName}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: java.util.stream.AbstractPipeline,
+    fieldName: combinedFlags}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: java.util.stream.AbstractPipeline,
+    fieldName: depth}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: java.util.stream.AbstractPipeline,
+    fieldName: linkedOrConsumed}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: java.util.stream.AbstractPipeline,
+    fieldName: nextStage}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: java.util.stream.AbstractPipeline,
+    fieldName: parallel}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: java.util.stream.AbstractPipeline,
+    fieldName: previousStage}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: java.util.stream.AbstractPipeline,
+    fieldName: sourceAnyStateful}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: java.util.stream.AbstractPipeline,
+    fieldName: sourceCloseAction}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: java.util.stream.AbstractPipeline,
+    fieldName: sourceOrOpFlags}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: java.util.stream.AbstractPipeline,
+    fieldName: sourceSpliterator}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: java.util.stream.AbstractPipeline,
+    fieldName: sourceStage}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: java.util.stream.AbstractPipeline,
+    fieldName: sourceSupplier}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.time.businessdaycalendar.BusinessdayCalendarExcludingTARGETHolidays,
+    fieldName: baseCalendar}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.time.businessdaycalendar.BusinessdayCalendarExcludingTARGETHolidays,
+    fieldName: weekdayCalendar}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.time.businessdaycalendar.BusinessdayCalendarExcludingTARGETHolidays,
+    fieldName: baseCalendar}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.time.businessdaycalendar.BusinessdayCalendarExcludingTARGETHolidays,
+    fieldName: weekdayCalendar}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.time.daycount.DayCountConvention_30E_360,
+    fieldName: is30Eplus360}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.time.daycount.DayCountConvention_30E_360_ISDA,
+    fieldName: isTreatEndDateAsTerminationDate}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.time.daycount.DayCountConvention_30U_360,
+    fieldName: isEndOfMonth}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.time.daycount.DayCountConvention_ACT_ACT_ICMA,
+    fieldName: frequency}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.time.daycount.DayCountConvention_ACT_ACT_ICMA,
+    fieldName: periods}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.time.daycount.DayCountConvention_UNKNOWN,
+    fieldName: errorMessage}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.time.daycount.DayCountConvention_UNKNOWN,
+    fieldName: errorMessage}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.timeseries.models.parametric.GARCH,
+    fieldName: maxIterations}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.timeseries.models.parametric.GARCH,
+    fieldName: values}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.timeseries.models.parametric.GARCH,
+    fieldName: windowIndexEnd}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.timeseries.models.parametric.GARCH,
+    fieldName: windowIndexStart}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.timeseries.models.parametric.SimpleHistroricalSimulation,
+    fieldName: values}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.timeseries.models.parametric.SimpleHistroricalSimulation,
+    fieldName: windowIndexEnd}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.timeseries.models.parametric.SimpleHistroricalSimulation,
+    fieldName: windowIndexStart}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.util.Cached,
+    fieldName: cache}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: net.finmath.util.Cached,
+    fieldName: mappingFunction}
 type: specs.openrewrite.org/v1beta/recipe
